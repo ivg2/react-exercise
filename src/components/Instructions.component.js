@@ -4,17 +4,12 @@ import './../styles/instructions.css'
 class Instructions extends Component {
   constructor(props) {
     super(props)
-    this.state = this.handleDisplayImage.bind(this)
-  }
-
-  handleDisplayImage() {
-    this.setState({ shouldDisplayImage: true })
   }
 
   render() {
     return (
       <div className="instructions">
-        if (this.state.shouldDisplayImage){' '}
+        if ({this.props.shouldDisplayImage})
         {
           <img
             className="instructions__logo"
